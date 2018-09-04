@@ -11,9 +11,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = false
   s.license      = 'MIT'
-  #s.source_files = 'sdkDemo/sdkDemo/libs/*.{h,m}'
-  #s.resource     = 'sdkDemo/sdkDemo/libs/'
-  #s.vendored_libraries  = 'sdkDemo/sdkDemo/libs/TencentOpenAPI.framework'
+  s.source_files = 'libTencentSDK/*.{h,m}'
+  s.resource     = 'libTencentSDK/'
+  s.vendored_libraries  = 'libTencentSDK/TencentOpenAPI.framework'
   s.frameworks   = 'SystemConfiguration'
-  s.libraries = 'sqlite3', 'z'
 end
